@@ -13,12 +13,12 @@ class AssignmentGrade
       'A'
     elsif calc_average < 90 && calc_average >= 80
       'B'
-    elsif calc_average < 80
+    elsif calc_average < 80 && calc_average >=70
       'C'
-    elsif calc_average < 70
+    elsif calc_average < 70 && calc_average >= 60
       'D'
     else
-      'E'
+      'F'
     end
   end
 

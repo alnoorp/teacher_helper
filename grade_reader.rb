@@ -23,6 +23,7 @@ class GradeReader
         student['grades'].split(',').map! { |i| i.to_f }
         )
     end
+    @class_list = @class_list.sort_by! { |record| [record.last_name, record.first_name] }
   end
 
   def class_list
